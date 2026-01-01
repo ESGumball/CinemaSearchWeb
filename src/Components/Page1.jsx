@@ -10,7 +10,7 @@ const Page1 = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(phim)}&apikey=3477c8f&`);
+        const res = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(phim)}&apikey=3477c8f&`);
 
         if (!res.ok) throw new Error("Lỗi !");
 
